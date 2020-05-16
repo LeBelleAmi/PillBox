@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="510dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/unsplash_two"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_close_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/big_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/createaccount"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:fontFamily="@font/pacifico_regular"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.TextInputLayout"
+            app:elevation="5dp">
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.TextEdit"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.TextInputLayout"
+            app:elevation="5dp">
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.TextEdit"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.TextInputLayout"
+            app:elevation="5dp">
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.TextEdit"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signup_button"
+            style="@style/Widget.Button"
+            android:text="@string/signup"
+            app:elevation="5dp"
+            app:pressedTranslationZ="12dp"
+            android:background="@drawable/btn_gradient_style"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/LoginStyle"
+            android:text="@string/signup_with"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/signup_google"
+                style="@style/LoginStyle"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:text="@string/text_google"
+                android:padding="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/signup_facebook"
+                style="@style/LoginStyle"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:text="@string/text_facebook"
+                android:padding="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/signup_twitter"
+                style="@style/LoginStyle"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:text="@string/text_twitter"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

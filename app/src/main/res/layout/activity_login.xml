@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unsplash_two"
+    android:orientation="vertical"
+    tools:context=".controller.LoginActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:paddingTop="30dp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/pillbox" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:shadowColor="@color/intro_font"
+        android:shadowDx="-2"
+        android:shadowDy="-2"
+        android:shadowRadius="1"
+        android:fontFamily="@font/pacifico_regular"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.TextInputLayout"
+            app:elevation="5dp">
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.TextEdit"
+                android:hint="@string/username"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.TextInputLayout"
+            app:elevation="5dp">
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.TextEdit"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_app"
+            style="@style/Widget.Button"
+            android:text="@string/login"
+            app:elevation="5dp"
+            android:background="@drawable/btn_gradient_style"
+            app:pressedTranslationZ="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/forgot_password"
+            style="@style/LoginStyle"
+            android:text="@string/forgot_password" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/LoginStyle"
+                android:text="@string/line"
+                android:paddingRight="4dp"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:paddingLeft="4dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/create_account"
+                style="@style/LoginStyle"
+                android:text="@string/createaccount"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/LoginStyle"
+            android:text="@string/connect_with"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/login_google"
+                style="@style/LoginStyle"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/text_google"
+                android:padding="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/login_facebook"
+                style="@style/LoginStyle"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/text_facebook"
+                android:padding="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/login_twitter"
+                style="@style/LoginStyle"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/text_twitter"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

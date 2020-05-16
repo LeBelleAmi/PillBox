@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/spacing_medium"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_mlarge">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/drugs" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_large">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pickImage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TableRow
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/pill"
+                    android:layout_margin="8dp"
+                    android:onClick="addImageToView"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgtwo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/tablet1"
+                    android:layout_margin="8dp"
+                    android:onClick="addImageToView"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgthree"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/capsulepill"
+                    android:layout_margin="8dp"
+                    android:onClick="addImageToView"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgfour"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/capsules2"
+                    android:layout_margin="8dp"
+                    android:onClick="addImageToView"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgfive"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/capsulepills"
+                    android:layout_margin="8dp"
+                    android:onClick="addImageToView"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgsix"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/tablet2"
+                    android:layout_margin="8dp"
+                    android:onClick="addImageToView"/>
+
+            </TableRow>
+
+
+            <TableRow
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgseven"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/herbal"
+                    android:layout_margin="8dp"
+                    android:onClick="addImageToView"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgeight"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/sleeping"
+                    android:layout_margin="8dp"
+                    android:onClick="addImageToView"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgnine"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/omega"
+                    android:layout_margin="8dp"
+                    android:onClick="addImageToView"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgten"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/drugset"
+                    android:layout_margin="8dp"
+                    android:onClick="addImageToView"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgeleven"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/drops"
+                    android:layout_margin="8dp"
+                    android:onClick="addImageToView"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgtwelve"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/inhalator"
+                    android:layout_margin="8dp"
+                    android:onClick="addImageToView"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgthirteen"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/injection"
+                    android:layout_margin="8dp"
+                    android:onClick="addImageToView"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgfourteen"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/firstaid"
+                    android:layout_margin="8dp"
+                    android:onClick="addImageToView"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/spacing_medium"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/cancel_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cancel"
+                app:strokeColor="@android:color/white"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/ok_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:strokeColor="@android:color/white"
+                android:gravity="center"
+                android:text="@string/okay"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

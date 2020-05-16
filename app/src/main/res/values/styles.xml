@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Base.AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Widget" />
+
+    <style name="Widget.TextInputLayout">
+        <item name="android:layout_height">@dimen/wrap_content</item>
+        <item name="android:layout_width">@dimen/match_parent</item>
+        <item name="android:textColorHint">@color/color_input_hint</item>
+        <item name="boxBackgroundMode">none</item>
+    </style>
+
+    <style name="Widget.TextEdit">
+        <item name="android:layout_height">@dimen/match_parent</item>
+        <item name="android:layout_width">@dimen/match_parent</item>
+        <item name="android:textColorHighlight">@color/color_text_highlight</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColorHint">@color/color_input_hint</item>
+        <item name="android:background">@drawable/state</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="Widget.Text">
+        <item name="android:layout_height">@dimen/match_parent</item>
+        <item name="android:layout_width">@dimen/match_parent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/state</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="Widget.TextTwo" parent="Widget.Text">
+        <item name="android:textColorHighlight">@color/color_text_highlight</item>
+        <item name="android:textColorHint">@color/color_input_hint</item>
+          <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Widget.Button">
+        <item name="android:layout_height">@dimen/wrap_content</item>
+        <item name="android:layout_width">@dimen/match_parent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/new_button_background</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">@dimen/text_padding</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="LoginStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingTop">25dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+
+    <!--style for a category in the form-->
+
+
+</resources>

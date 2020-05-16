@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".controller.AddMedicationActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbartwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbartwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:minHeight="55dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:translationZ="6dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp"
+        app:cardMaxElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbartwo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/pink"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="8dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/drug_avatar"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/drugs" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/change_avatar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/drug_avatar"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="@+id/drug_avatar"
+                        android:background="@drawable/ic_add_drug"
+                        android:contentDescription="@null" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.TextInputLayout"
+                    app:elevation="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/medicname_text_view"
+                        style="@style/Widget.TextEdit"
+                        android:hint="@string/medicationname"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.TextInputLayout"
+                    app:elevation="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/descrip_text_view"
+                        style="@style/Widget.TextEdit"
+                        android:hint="@string/description"
+                        android:inputType="textMultiLine" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.TextInputLayout"
+                    app:elevation="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/freq_text_view"
+                        style="@style/Widget.TextEdit"
+                        android:hint="@string/freq"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/startdate_text_view"
+                        style="@style/Widget.TextTwo"
+                        android:hint="@string/start"
+                        android:ems="10"
+                        android:layout_width="0dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_weight="0.5"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/starttime_text_view"
+                        style="@style/Widget.TextTwo"
+                        android:hint="@string/starttime"
+                        android:ems="10"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_weight="0.5"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/enddate_text_view"
+                        style="@style/Widget.TextTwo"
+                        android:hint="@string/end"
+                        android:ems="10"
+                        android:layout_width="0dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_weight="0.5"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/endtime_text_view"
+                        style="@style/Widget.TextTwo"
+                        android:hint="@string/endtime"
+                        android:ems="10"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_weight="0.5"/>
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/reminder_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/btn_gradient_style"
+                    android:text="@string/reminder" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.TextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp"
+                        android:layout_weight="1"
+                        app:elevation="5dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dosage_text_view"
+                            style="@style/Widget.TextEdit"
+                            android:ems="10"
+                            android:hint="@string/dosage"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.TextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:elevation="5dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dosageinst_text_view"
+                            style="@style/Widget.TextEdit"
+                            android:ems="10"
+                            android:hint="@string/instruction"
+                            android:inputType="textMultiLine" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.TextInputLayout"
+                    app:elevation="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/doctor_text_view"
+                        style="@style/Widget.TextEdit"
+                        android:ems="10"
+                        android:hint="@string/doctor"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
